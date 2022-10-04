@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/*header*/
 .logo {
     grid-area: logo;
     padding: 25px;
@@ -9,10 +10,20 @@
 .botonera {
     grid-area: botonera;
 }
-.banner {
+.banner { /*la imagen debe estar entera*/
+    height: 500px;
+    background-image: url(https://sat02pap002files.storage.live.com/y4myHitsgZn5d6l990c6Cw7IyNrGq6SvHl5CM8TcyFEoaqgDB0cJeHnKISDRY7y_c4orhHFJ4d4wbljrN_-ZuIbtdusEPi1LiSiPfnIJHOrsMdVoDS_czyH9fhBhQDKbMnNRsgOqMxINjABFCrZ7B024Pf_2GsGiKCPZhHnIHkEDF6O85-gkLmbMHztszH-yr8zslx8ivRiOUARTMIXLXiUJw/pertada1.jpg?psid=1&width=458&height=344);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     grid-area: banner;
 }
+.banner div {
+    background-color:#d9d9d9; /*agregar opacidad*/
+}
 header {
+    margin-bottom: 50px;
     display: grid;
     grid-template: 120px 1fr / 500px 1fr;
     grid-template-areas: "logo botonera"
@@ -29,9 +40,29 @@ header a {
 header a:hover {
     color: #d9d9d9;
 }
-footer {
-    background-color: #d9d9d9;
-}
-h2 {
+/*historia*/
+section h2 {
     text-align: center;
+}
+.historia {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    padding: 30px;
+}
+section div img {
+    width: 50%;
+    height: 350px;
+    padding: 30px;
+}
+section div p {
+    width: 50%;
+    padding: 30px;
+}
+/*footer*/
+footer {
+    display: flex;
+    background-color: #d9d9d9;
+    justify-content: space-around;
+    align-items: center;
 }

@@ -15,7 +15,7 @@
     position: fixed;
 }
 .banner {
-    widht: 100%; 
+    width: 100%; 
     height: 600px;
     background-image: url("https://sat02pap002files.storage.live.com/y4m8r1ASP9D9vmNtxZPvas5sI6Pkc2BOdrq41s1cehcW8pB-oCz6S39-ejsM-sKo0CTh1KytqK3rdQ2uOdgkOYNnneVd0ZLEPH5_Wd0xzRfv4E2vcNKeCy8-GknnBK5KvD6hDEdSzzq24VSgl_HYuuTr0eJgnYKm1cv_nR0D4OPChFPE9en5jalNfY1dSCL4v7CGVCQKqgdJ2uwZBS2YgQ7Uw/Portada%201366x600px.png?psid=1&width=1091&height=479");
     background-repeat: no-repeat;
@@ -24,8 +24,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: nowrap;
+}
+.redes {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 5%;
 }
 .titulo {
+    padding: 20px;
     background-color:#d9d9d9; /*agregar opacidad*/
 }
 header li {
@@ -37,7 +45,7 @@ header a {
     color: black;
 }
 header a:hover {
-    color: #d9d9d9;
+    color: #757474;
 }
 /*historia*/
 section h2 {

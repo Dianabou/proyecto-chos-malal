@@ -3,31 +3,30 @@
     font-family: 'Poppins', sans-serif;
 }
 /*header*/
-.logo {
-    grid-area: logo;
-    padding: 25px;
+.cabecera {
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    background-color: #d9d9d9;
+    opacity: 70%;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
 }
-.botonera {
-    grid-area: botonera;
-}
-.banner { /*la imagen debe estar entera*/
-    height: 500px;
-    background-image: url(https://sat02pap002files.storage.live.com/y4myHitsgZn5d6l990c6Cw7IyNrGq6SvHl5CM8TcyFEoaqgDB0cJeHnKISDRY7y_c4orhHFJ4d4wbljrN_-ZuIbtdusEPi1LiSiPfnIJHOrsMdVoDS_czyH9fhBhQDKbMnNRsgOqMxINjABFCrZ7B024Pf_2GsGiKCPZhHnIHkEDF6O85-gkLmbMHztszH-yr8zslx8ivRiOUARTMIXLXiUJw/pertada1.jpg?psid=1&width=458&height=344);
+.banner {
+    widht: 100%; 
+    height: 600px;
+    background-image: url("https://sat02pap002files.storage.live.com/y4m8r1ASP9D9vmNtxZPvas5sI6Pkc2BOdrq41s1cehcW8pB-oCz6S39-ejsM-sKo0CTh1KytqK3rdQ2uOdgkOYNnneVd0ZLEPH5_Wd0xzRfv4E2vcNKeCy8-GknnBK5KvD6hDEdSzzq24VSgl_HYuuTr0eJgnYKm1cv_nR0D4OPChFPE9en5jalNfY1dSCL4v7CGVCQKqgdJ2uwZBS2YgQ7Uw/Portada%201366x600px.png?psid=1&width=1091&height=479");
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    grid-area: banner;
 }
-.banner div {
+.titulo {
     background-color:#d9d9d9; /*agregar opacidad*/
-}
-header {
-    margin-bottom: 50px;
-    display: grid;
-    grid-template: 120px 1fr / 500px 1fr;
-    grid-template-areas: "logo botonera"
-                         "banner banner";
 }
 header li {
     padding: 20px;

@@ -17,7 +17,7 @@
 .banner {
     width: 100%; 
     height: 600px;
-    background-image: url("https://sat02pap002files.storage.live.com/y4m8r1ASP9D9vmNtxZPvas5sI6Pkc2BOdrq41s1cehcW8pB-oCz6S39-ejsM-sKo0CTh1KytqK3rdQ2uOdgkOYNnneVd0ZLEPH5_Wd0xzRfv4E2vcNKeCy8-GknnBK5KvD6hDEdSzzq24VSgl_HYuuTr0eJgnYKm1cv_nR0D4OPChFPE9en5jalNfY1dSCL4v7CGVCQKqgdJ2uwZBS2YgQ7Uw/Portada%201366x600px.png?psid=1&width=1091&height=479");
+    animation: cambiarImagen 12s linear 0s infinite normal forwards running;
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -25,6 +25,17 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
+}
+@keyframes cambiarImagen {
+    0% {
+        background-image: url("https://sat02pap002files.storage.live.com/y4m8r1ASP9D9vmNtxZPvas5sI6Pkc2BOdrq41s1cehcW8pB-oCz6S39-ejsM-sKo0CTh1KytqK3rdQ2uOdgkOYNnneVd0ZLEPH5_Wd0xzRfv4E2vcNKeCy8-GknnBK5KvD6hDEdSzzq24VSgl_HYuuTr0eJgnYKm1cv_nR0D4OPChFPE9en5jalNfY1dSCL4v7CGVCQKqgdJ2uwZBS2YgQ7Uw/Portada%201366x600px.png?psid=1&width=1091&height=479");    
+    }
+    50% {
+        background-image: url(https://sat02pap002files.storage.live.com/y4mZTfVK9UzADmO5G-_7i537dbi-AH9wUJD5Q2ijhlzkQqsWSpy6Ntq4SlEL2LAgkkQvULyAczO4bMk_MYQKhvYips1Rm6aIxsP2dwmhpKpU2DtObTaD9DFXJqnx5gbLmUxwW0GtSBrEycZmMPZIrKCAfWnRRLy5s4e9KhTAolrz0zmHO1ZnLgjgJUD7oB3TM19hDXvWtELYPh6tu7vtI3hOQ/Portada%201366x600px%20%281%29.png?psid=1&width=1091&height=479);
+    }
+    100% {
+        background-image: url(https://sat02pap002files.storage.live.com/y4mwPnJmpbjqS8gTKc6g-N2V5sjTqCwVzoKyHwaUHZddFP1BeunMhuszCCsYYbHR3PJX6YoaotKIGIlCrK_AMjpKitgI3wH1GELggDaI3G4lKp036s4djYXPyltdriK40tWN2voq5jTrQWQwSv__oad5Th3NyD47AbmByifpvJI8A_smwauiSTJm_6vQYrsYH6FlA2Ou2LsSqIujVPa_W2tlw/Portada%201366x600px%203.png?psid=1&width=1091&height=479);
+    }
 }
 .redes {
     display: flex;

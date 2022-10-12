@@ -34,7 +34,9 @@
 }
 .titulo {
     padding: 20px;
-    background-color:#d9d9d9; /*agregar opacidad*/
+    background-color:#d9d9d9;
+    opacity: 60%;
+    text-align: center;
 }
 header li {
     padding: 20px;
@@ -45,7 +47,8 @@ header a {
     color: black;
 }
 header a:hover {
-    color: #757474;
+    animation: bounceIn;
+    animation-duration: 3s;
 }
 /*historia*/
 section h2 {

@@ -1,131 +1,175 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0%;
+  padding:0%;
 }
 /*header*/
 .logo img {
-    width: 80%;
+  width: 70%;
 }
 .botonera {
-    width: 50%;
+  width: 50%;
 }
 .cabecera {
-    width: 100%;
-    height: 120px;
-    padding: 20px;
-    background-color: #d9d9d9;
-    opacity: 70%;
-    background-size: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
+  width: 100%;
+  height: 120px;
+  padding: 20px;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 h1 {
-    font-size: 2.5vw;
+  font-size: 2.5vw;
 }
 h2 {
-    font-size: 2vw;
+  font-size: 2vw;
 }
 h3 {
-    font-size: 1.5vw;
+  font-size: 1.5vw;
 }
 h4 {
-    font-size: 1vw;
+  font-size: 1vw;
 }
 
 .banner {
-    width: 100vw; 
-    height: 600px;
-    animation: cambiarImagen 21s linear 0s infinite normal forwards running;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  width: 100vw;
+  height: 600px;
+  animation: cambiarImagen 21s linear 0s infinite normal forwards running;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 @keyframes cambiarImagen {
-    0% {
-        background-image: url('/imagenes/Portada1366x600px.png');    
-    }
-    50% {
-        background-image: url('/imagenes/Portada1366x600px3.png');
-    }
-    100% {
-        background-image: url('/imagenes/Portada1366x600px(1).png');
-    }
+  0% {
+    background-image: url("/imagenes/Portada1366x600px.png");
+  }
+  50% {
+    background-image: url("/imagenes/Portada1366x600px3.png");
+  }
+  100% {
+    background-image: url("/imagenes/Portada1366x600px(1).png");
+  }
 }
 .redes {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 5%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 5%;
 }
 .titulo {
-    padding: 20px;
-    background-color:#d9d9d9;
-    opacity: 60%;
-    text-align: center;
+  padding: 16px;
+  background-color: #ffffff;
+  opacity: 60%;
+  text-align: center;
 }
 header li {
-    padding: 20px;
-    display: inline-block;
+  padding: 20px;
+  display: inline-block;
+  margin-top: 20px;
 }
-header a {
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 header a:hover {
-    animation: bounceIn;
-    animation-duration: 3s;
+  animation: bounceIn;
+  animation-duration: 3s;
 }
 /*historia*/
 section h2 {
-    text-align: center;
+  text-align: center;
 }
 .historia {
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  padding: 20px;
 }
 section div img {
-    width: 50%;
-    height: 350px;
-    padding: 30px;
+  width: 50%;
+  height: 350px;
+  padding: 30px;
 }
 section div p {
-    width: 50%;
-    padding: 30px;
+  width: 50%;
+  padding: 30px;
 }
 /*footer*/
 footer {
-    display: flex;
-    background-color: #d9d9d9;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  background-color: #d9d9d9;
+  justify-content: space-around;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
-    .logo {
-        width: 30%;
-    }
-    .botonera {
-        width: 70%;
-    }
-    .botonera h4, p {
-        font-size: 1.5vw;
-    }
-    .cabecera {
-        height: 100px;
-    }
-    .banner {
-        height: 400px;
-    }
-    .historia {
-        margin-bottom: 20px;
-    }
+  .logo {
+    width: 30%;
+  }
+  .botonera {
+    width: 70%;
+  }
+  .botonera h4,
+  p {
+    font-size: 1.5vw;
+  }
+  .cabecera {
+    height: 100px;
+  }
+  .banner {
+    height: 400px;
+  }
+  .historia {
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (max-width: 425px) {
-
+  .cabecera {
+    height: 50px;
+    padding: 0px;
+  }
+  .botonera {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .logo {
+    width: 20%;
+  }
+  .logo img {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .botonera {
+    width: 80%;
+  }
+  header li {
+    padding: 10px;
+  }
+  .banner {
+      height: 200px;
+  }
+  .historia {
+      padding-top: 0%;
+      margin:0%;
+      align-content: center;
+      flex-direction: column;
+  }
+  section {
+      margin-top: 10px;
+  }
+  section div img {
+    padding-top: 10px;  
+    width: 100%;
+    height: auto;
+    
+  }
+  section div p {
+    width: 100%;
+    padding:0%;
+    margin:
+  }
 }

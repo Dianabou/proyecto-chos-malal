@@ -143,6 +143,9 @@ footer {
   .banner {
     height: 400px;
   }
+  .redes i {
+    font-size: 4vw !important;
+  }
   .historia {
     margin-bottom: 20px;
   }
@@ -199,6 +202,9 @@ footer {
   }
   .banner {
     height: 250px;
+  }
+  .redes i {
+    font-size: 5vw !important;
   }
   section {
     width: 100%;

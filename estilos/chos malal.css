@@ -168,6 +168,9 @@ footer {
   h3 {
     font-size: 4vw;
   }
+  .botonera h4 {
+    font-size: 2vw;
+  }
   h4, p {
     font-size: 3.5vw;
   }
@@ -190,7 +193,7 @@ footer {
   .botonera li {
     text-align: center;
     width: 100%;
-    padding: 10px;
+    padding: 7px;
     margin: 0px;
     background-color: #d9d9d9;
   }
@@ -214,7 +217,7 @@ footer {
   }
   .historia p {
     text-align: justify;
-    width: 80%;
+    width: 100%;
     padding: 0%;
   }
 footer {

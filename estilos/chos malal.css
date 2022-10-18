@@ -113,16 +113,16 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   h2 {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
   h3 {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   h4, p {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
   }
   .logo {
     width: 30%;
@@ -150,21 +150,26 @@ footer {
     height: 300px;
   }
   footer {
-    height: 100px;
+    height: 200px;
+    flex-wrap: wrap;
+  }
+  .f1 {
+    width: 100%;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 425px) {
   h1 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   h2 {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
   h3 {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   h4, p {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
   .cabecera {
     height: 125px;
@@ -215,6 +220,6 @@ footer {
 footer {
   flex-direction: column;
   text-align: center;
-  height: 150px;
-}
+  height: 300px;
+  }
 }

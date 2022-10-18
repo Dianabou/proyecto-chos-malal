@@ -4,13 +4,19 @@
   margin: 0%;
   padding: 0%;
 }
+h1 {
+  font-size: 3vw;
+}
+h2 {
+  font-size: 2.5vw;
+}
+h3 {
+  font-size: 2vw;
+}
+h4, p {
+  font-size: 1.5vw;
+}
 /*header*/
-.logo img {
-  width: 70%;
-}
-.botonera {
-  width: 50%;
-}
 .cabecera {
   width: 100%;
   height: 120px;
@@ -19,19 +25,25 @@
   display: flex;
   justify-content: space-between;
 }
-h1 {
-  font-size: 2.5vw;
+.cabecera li {
+  padding: 15px;
+  display: inline-block;
+  margin-top: 10px;
 }
-h2 {
-  font-size: 2vw;
+.cabecera a:hover {
+  animation: bounceIn;
+  animation-duration: 3s;
 }
-h3 {
-  font-size: 1.5vw;
+.logo {
+  width: 40%;
 }
-h4 {
-  font-size: 1vw;
+.logo img {
+  width: 70%;
+  height: 100px;
 }
-
+.botonera {
+  width: 60%;
+}
 .banner {
   width: 100vw;
   height: 600px;
@@ -55,30 +67,21 @@ h4 {
     background-image: url("/imagenes/Portada1366x600px(1).png");
   }
 }
-.redes {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 5%;
-}
 .titulo {
   padding: 16px;
   background-color: #ffffff;
   opacity: 60%;
   text-align: center;
 }
-header li {
-  padding: 20px;
-  display: inline-block;
-  margin-top: 10px;
+.redes {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 5%;
 }
 a {
   text-decoration: none;
   color: black;
-}
-header a:hover {
-  animation: bounceIn;
-  animation-duration: 3s;
 }
 /*historia*/
 section h2 {
@@ -91,28 +94,44 @@ section h2 {
   margin-bottom: 60px;
   padding: 20px;
 }
-section div img {
+.historia img {
   width: 50%;
-  height: 350px;
+  height: 450px;
   padding: 30px;
 }
-section div p {
+.historia p {
   width: 50%;
   padding: 30px;
 }
 /*footer*/
 footer {
+  height: 150px;
   display: flex;
   background-color: #d9d9d9;
   justify-content: space-around;
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3vw;
+  }
+  h2 {
+    font-size: 2.5vw;
+  }
+  h3 {
+    font-size: 2vw;
+  }
+  h4, p {
+    font-size: 1.5vw;
+  }
   .logo {
     width: 30%;
   }
+  .logo img {
+    height: auto;
+  }
   .botonera {
-    width: 70%;
+    width: 60%;
   }
   .botonera h4,
   p {
@@ -127,8 +146,26 @@ footer {
   .historia {
     margin-bottom: 20px;
   }
+  .historia img {
+    height: 300px;
+  }
+  footer {
+    height: 100px;
+  }
 }
 @media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 4vw;
+  }
+  h2 {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  h4, p {
+    font-size: 2.5vw;
+  }
   .cabecera {
     height: 125px;
     padding: 0px;
@@ -155,23 +192,29 @@ footer {
   .banner {
     height: 250px;
   }
+  section {
+    width: 100%;
+    margin-top: 10px;
+  }
   .historia {
     padding-top: 0%;
     margin: 0%;
     align-content: center;
     flex-direction: column;
   }
-  section {
-    margin-top: 10px;
-  }
-  section div img {
+  .historia img {
     padding-top: 10px;
     width: 100%;
     height: auto;
   }
-  section div p {
+  .historia p {
     text-align: justify;
     width: 80%;
     padding: 0%;
   }
+footer {
+  flex-direction: column;
+  text-align: center;
+  height: 150px;
+}
 }

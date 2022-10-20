@@ -30,7 +30,7 @@ h4, p {
   display: inline-block;
   margin-top: 10px;
 }
-.cabecera a:hover {
+.cabecera a:hover, .redes a:hover, .f1 a:hover {
   animation: bounceIn;
   animation-duration: 3s;
 }
@@ -231,4 +231,53 @@ footer {
   text-align: center;
   height: 300px;
   }
+}
+.pagina {
+  padding: 50px;
+}
+/*que hacer*/
+.que {
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  padding-top: 0px;
+  margin-left: 10px;
+}
+.q1 {
+  width: 50%;
+}
+.q1 h4 {
+  margin-bottom: 10px;
+}
+.q2 {
+  width: 50%;
+}
+.q1 img, .q2 img {
+  width: 90%;
+}
+.q1 p, .q2 p {
+  width: 90%;
+  text-align: justify;
+}
+/*gastronomia*/
+.gast {
+  width: 1000px;
+  margin: auto;
+  padding: 80px;
+  padding-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.g {
+  width: 260px;
+  margin: 10px;
+  border: 8px solid #d9d9d9;
+}
+.g img {
+  width: 100%;
+}
+.nom {
+  text-align: center;
+  padding: 30px;
 }

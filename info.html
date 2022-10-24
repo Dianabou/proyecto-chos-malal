@@ -37,17 +37,21 @@
   <body>
     <header id="idheader"></header>
     <script src="script/header.js"></script>
-    <div>
-      <h2>Oficina de Turismo</h2>
-      <h3>Información</h3>
-      <br /><br />
-      <div>
-        <p>Dirección: Félix San Martín 182, Chos Malal. Neuquen.</p>
-        <p>Horario de Atención: de 8:00 a 15:00</p>
-        <p>Tel. Fijo: (+54) 0299 4424089</p>
-        <p>WhatsApp: +5492995556435</p>
-        <p>Email: turismo@chosmalal.gob.ar</p>
-
+    <div class="contacto">
+      <div class="info">
+        <h2>Oficina de Turismo</h2>
+        <h3>Información</h3>
+      </div>
+      <div class="ubicacion">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="menor">
+        Félix San Martín 182, Chos Malal.<br>
+        Horario de Atención: de 8:00 a 15:00 <br>
+        Tel. Fijo: (+54) 0299 4424089 <br>
+        WhatsApp: +5492995556435 <br>
+        Email: turismo@chosmalal.gob.ar</p>
+      </div>
+      <div class="mapa">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12681.721559454327!2d-70.2695763!3d-37.3796528!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967272238fa5a5e5%3A0x1105c48e909b356d!2sChos%20Malal%2C%20Neuqu%C3%A9n!5e0!3m2!1ses-419!2sar!4v1665621912797!5m2!1ses-419!2sar"
           width="300"
@@ -58,8 +62,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-
-      <div>
+      <div class="formulario" >
         <form
           action="mailto: romina-albornoz@hotmail.com"
           method="POST"
@@ -67,11 +70,9 @@
           name="formularioValidado"
           id="formulario"
         >
-          Nombre: <input type="text" name="nombre" /> <br />
-          <br />
-          Apellido: <input type="text" name="apellido" /> <br /><br />
-          Email: <input type="email" name="dirCorreo" /> <br /><br />
-
+          Nombre: <input required type="text" name="nombre" size="70"/> <br/>
+          Apellido: <input required type="text" name="apellido" size="70"/> <br/>
+          Email: <input required type="email" name="dirCorreo" size="73"/> <br/>
           Seleccioná el tema de tu consulta:
           <select name="Consulta">
             <option>Tema de Consulta</option>
@@ -81,20 +82,18 @@
             <option>Cómo llegar</option>
             <option>Libro de quejas</option>
           </select>
-          <br /><br />
-          <textarea name="Mensaje" id="" cols="60" rows="7">Escribí tu mensaje acá ...</textarea
+          <br />
+          <textarea name="Mensaje" id="" cols="84" rows="7">
+Escribí tu mensaje acá ...</textarea
           >
-          <br /><br />
-          <input type="button" value="ENVIAR" onclick="validar_enviar()" />
+          <br />
+          <input class="enviar" type="button" value="Enviar" onclick="validar_enviar()" />
         </form>
       </div>
-
-      <div>
+      <div class="imagen">
         <img src="imagenes/informacion.png" alt="Chos Malal Paisaje Nevado" />
       </div>
     </div>
-
-    <br /><br />
     <footer id="idfooter"></footer>
     <script src="script/footer.js"></script>
     <script src="script/formulario.js"></script>

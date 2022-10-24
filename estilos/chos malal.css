@@ -303,10 +303,48 @@ footer {
   height: 120px;
   text-align: justify;
 }
-.a button {
+.a button, .enviar {
   color: white;
   background-color: black; 
   padding: 15px 20px;
   margin: 10px;
   width: 100px; 
+  border-radius: 5px;
 }
+/*info*/
+.info {
+  grid-area: info;
+}
+.ubicacion {
+  grid-area: ubicacion;
+  margin: auto 0px;
+  text-align: justify;
+}
+.mapa {
+  height: auto;
+  grid-area: mapa;
+  margin: auto 0px;
+  border-style: 10px solid #d9d9d9;
+}
+.imagen {
+  grid-area: imagen;
+}
+.formulario {
+  grid-area: formulario;
+}
+.formulario input:required, .formulario textarea, .formulario select {
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  border-style: none;
+}
+.contacto {
+  padding: 50px; 
+  display: grid;
+  grid-template-areas: "info info info info imagen imagen"
+                       "ubicacion mapa mapa mapa imagen imagen"
+                       "formulario formulario formulario formulario imagen imagen"; 
+}
+.menor {
+  font-size: smaller;
+}
+

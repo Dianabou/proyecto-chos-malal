@@ -56,6 +56,9 @@ h4, p {
   flex-direction: column;
   flex-wrap: nowrap;
 }
+footer h4 {
+  font-size: smaller;
+}
 @keyframes cambiarImagen {
   0% {
     background-image: url("/imagenes/Portada1366x600px.png");
@@ -133,8 +136,7 @@ footer {
   .botonera {
     width: 60%;
   }
-  .botonera h4,
-  p {
+  .botonera h4, p {
     font-size: 1.5vw;
   }
   .cabecera {
@@ -226,10 +228,10 @@ footer {
     width: 100%;
     padding: 0%;
   }
-footer {
-  flex-direction: column;
-  text-align: center;
-  height: 300px;
+  footer {
+    flex-direction: column;
+    text-align: center;
+    height: 300px;
   }
 }
 .pagina {
@@ -347,4 +349,3 @@ footer {
 .menor {
   font-size: smaller;
 }
-

@@ -281,3 +281,32 @@ footer {
   text-align: center;
   padding: 30px;
 }
+/*alojamiento*/
+.aloj {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 80px;
+  padding-top: 0px;
+}
+.a {
+  width: 25%;
+}
+.a h4, .a p {
+  padding: 10px;
+}
+.a img {
+  width: 90%;
+}
+.a p {
+  font-size: smaller;
+  height: 120px;
+  text-align: justify;
+}
+.a button {
+  color: white;
+  background-color: black; 
+  padding: 15px 20px;
+  margin: 10px;
+  width: 100px; 
+}

@@ -82,6 +82,25 @@ footer h4 {
   position: fixed;
   right: 5%;
 }
+.api {
+  position: fixed;
+  left: 5%;
+  border: 2px solid black;
+}
+.apih {
+  padding: 5px;
+  display: flex;
+  float: left;
+  flex-direction: column;
+  text-align: left;
+  text-decoration: underline;
+}
+.apib {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
 a {
   text-decoration: none;
   color: black;

@@ -35,63 +35,38 @@
     <title>Chos Malal</title>
   </head>
   <body>
-    <header>
-      <div class="cabecera">
-        <div class="logo">
-          <a href="#"
-            ><img src="imagenes/logo_chosmalal.png" alt="Logo Chos Malal"
-          /></a>
-        </div>
-        <div class="botonera">
-          <ul>
-            <li>
-              <a href="quehacer.html"><h4>Qué hacer</h4></a>
-            </li>
-            <li>
-              <a href="gastronomia.html"><h4>Gastronomía</h4></a>
-            </li>
-            <li>
-              <a href="alojamiento.html"><h4>Alojamiento</h4></a>
-            </li>
-            <li>
-              <a href="info.html"><h4>Información</h4></a>
-            </li>
-          </ul>
-        </div>
+    <header id="idheader"></header>
+    <script src="script/header.js"></script>
+    <div class="banner">
+      <div class="titulo">
+        <h1>chos malal</h1>
+        <h3>oficina de turismo</h3>
       </div>
-      <div class="banner">
-        <div class="titulo">
-          <h1>chos malal</h1>
-          <h3>oficina de turismo</h3>
+      <div class="api">
+        <div class="apih">
+          <p>Temp.(ºC):</p>
+          <p>S.T.(ºC):</p>
+          <p>Est.Clima:</p>
         </div>
-        <div class="redes">
-          <a href="www.instagram.com" target="_blank"
-            ><i class="fab fa-instagram" style="font-size: 3vw"></i
-          ></a>
-          <a href="www.facebook.com" target="_blank"
-            ><i class="fab fa-facebook" style="font-size: 3vw"></i
-          ></a>
-          <a href="www.twitter.com" target="_blank"
-            ><i class="fab fa-twitter" style="font-size: 3vw"></i
-          ></a>
+        <div class="apib">
+          <p id="climaChosmalal"></p>
+          <p id="climaChosmalal1"></p>
+          <p id="climaChosmalal2"></p>
         </div>
+        <script src="script/clima.js"></script>
       </div>
-    </header>
-    <section>
-      <div class="container mt-4 shadow-lg p3 mb-5 bg-body rouded">
-        <table class="table table-border table-striped">
-          <thead>
-            <tr>
-              <th>coord</th>
-              <th>main</th>
-              <th>weather</th>
-            </tr>
-          </thead>
-          <tbody id="climaChosmalal"></tbody>
-          <script src="script/clima.js"></script>
-        </table>
+      <div class="redes">
+        <a href="www.instagram.com" target="_blank"
+          ><i class="fab fa-instagram" style="font-size: 3vw"></i
+        ></a>
+        <a href="www.facebook.com" target="_blank"
+          ><i class="fab fa-facebook" style="font-size: 3vw"></i
+        ></a>
+        <a href="www.twitter.com" target="_blank"
+          ><i class="fab fa-twitter" style="font-size: 3vw"></i
+        ></a>
       </div>
-    </section>
+    </div>
     <section>
       <h2>Capital Histórica y Cutural de Neuquén</h2>
       <div class="historia">
@@ -111,21 +86,6 @@
       </div>
     </section>
   </body>
-  <footer>
-    <div class="f1">
-      <a href="index.html"
-        ><h2>chos malal</h2>
-        <h3>oficina de turismo</h3></a
-      >
-    </div>
-    <div class="f2">
-      <h4>Félix San Martín 182, Chos Malal, Neuquén.</h4>
-      <h4>Horario de Atención de 8:00 a 15:00</h4>
-    </div>
-    <div class="f3">
-      <h4>Tel. Fijo (+54) 0299 4424089</h4>
-      <h4>WhatsApp +5492995556435</h4>
-      <h4>turismo@chosmalal.gob.ar</h4>
-    </div>
-  </footer>
+  <footer id="idfooter"></footer>
+  <script src="script/footer.js"></script>
 </html>

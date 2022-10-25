@@ -227,6 +227,12 @@ footer {
   .redes i {
     font-size: 5vw !important;
   }
+  .api {
+    left: 2%;
+  }
+  .api p {
+    font-size: xx-small;
+  }
   section {
     width: 100%;
     margin-top: 10px;
